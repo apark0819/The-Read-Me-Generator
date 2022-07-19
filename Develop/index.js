@@ -69,27 +69,12 @@ const questions = [
             if(err){
                 return console.log(err);
             } else {
-                return console.log('Here is your readme file!')
+                return console.log('Here is your README file!')
             }
         }
         )
     }
 
-    // const writeFile = fileContent => {
-    //     return new Promise((resolve, reject) => {
-    //         fs.writeFile('./README.md', fileContent, err => {
-    //             if (err) {
-    //                 reject(err);
-    //                 return;
-    //             }
-
-    //             resolve({
-    //                 ok: true,
-    //                 message: 'Sucess!'
-    //             });
-    //         });
-    //     });
-    // };
 
 // TODO: Create a function to initialize app
 function init() {}
