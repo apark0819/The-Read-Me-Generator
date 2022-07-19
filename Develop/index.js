@@ -3,6 +3,7 @@
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -63,7 +64,32 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
+    function writeToFile(filename, data) {
+        fs.writeFile(filename, data, (err) =>{
+            if(err){
+                return console.log(err);
+            } else {
+                return console.log('Here is your readme file!')
+            }
+        }
+        )
+    }
+
+    // const writeFile = fileContent => {
+    //     return new Promise((resolve, reject) => {
+    //         fs.writeFile('./README.md', fileContent, err => {
+    //             if (err) {
+    //                 reject(err);
+    //                 return;
+    //             }
+
+    //             resolve({
+    //                 ok: true,
+    //                 message: 'Sucess!'
+    //             });
+    //         });
+    //     });
+    // };
 
 // TODO: Create a function to initialize app
 function init() {}
