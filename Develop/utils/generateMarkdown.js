@@ -1,34 +1,39 @@
 
+// // TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+   return `# ${data.title}
+// `;
+ }
+## License:
+ [![license]]
 
-** Table-of-Contents **
+## Table-of-Contents 
+ - [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contribute)
+  * [Contribution](#contribute)
   * [Tests](#tests)
-  ${renderLicenseTOC(data.license)}
-  * [Questions](#questions)
-----------------------------------
+  
+  ## Description:
+    ${data.description}
+
   ## Installation
+    ${data.installation}
   
-  ${data.installation}
-  
-  ## Usage
-  
-  ${data.usage}
+  ## Usage  
+    ${data.usage}
   
   ## Contributing
-  
-  ${data.contribution}
+    ${data.contribution}
   
   ## Tests
-  
-  ${data.tests}
+    ${data.tests}
   
   ${renderLicenseSection(data.license)}
   
-  ## For questions and concerns:
-  
-  Contact: [${data.github}](https://github.com/${data.github}), email at [${data.email}](mailto:${data.email}).;
-  `}
+  ## Contact
+    $[{data.github}}(https://github.com/$data.github}])
+    $[{data.email}](mailto:$data.email)
+    ``;
 
 module.exports = generateMarkdown;
