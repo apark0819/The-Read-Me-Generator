@@ -25,15 +25,42 @@ const questions = [
 
     {
         type: 'input',
-        name: 'title',
-        message: 'What is the title of your project?',
+        name: 'usage',
+        message: 'Please explain how your project will be used.',
     },
-    
-    
+      
     {
-        type: 
+        type: 'input',
+        name: 'license',
+        message: 'Please choose a license for your project.',
+        list: ['MIT', 'none']
+    },
+
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'Please include contribution guidelines for your project.'
+    },
+
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Please provide test instructions.'
+    },
+
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please add your github username.'
+    },
+
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please add your email.'
     }
 
+    
     
 ];
 
