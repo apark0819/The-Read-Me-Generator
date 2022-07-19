@@ -33,8 +33,8 @@ const questions = [
     {
         type: 'input',
         name: 'license',
-        message: 'Please choose a license for your project.',
-        list: ['MIT', 'none']
+        message: 'Please name the license you will be using.',
+        // choices: ['Apache', 'MPL 2.0', 'MIT', 'none']
     },
 
     {
